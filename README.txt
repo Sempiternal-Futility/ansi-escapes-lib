@@ -48,7 +48,7 @@ Each "block/square" in this .txt file is a function.
 | These are the attributes that you can use with the function "set_attr()".                                           |                     
 | The number on the left side can be used as arguments to the function. (i.e "set_attr(3)" will make text italic)     |
 | The description of what the argument/number will do is on the right side.                                           |
-| It doesn't return anything.                                                                                                                    |
+| It doesn't return anything.                                                                                         |
 |                                                                                                                     |
 | 0 	   Reset / Normal                                                                                             |
 | 1 	   Bold or increased intensity                                                                                |
