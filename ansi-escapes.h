@@ -1,8 +1,12 @@
 #ifndef ANSI_ESCAPES_H
 #define ANSI_ESCAPES_H
 
+#include <stdio.h>
+
+enum directions {up = 0, left = 1, right = 2, down = 3}; // These can be used with "move_cur"
+
 // Moves the cursor around the screen
-int move_cur(short dir, short pos) // Takes a direction (represented by a number) and a position
+int move_cur(short dir, short pos) // Takes a direction (represented by an enum) and a position
 {
    if (dir == 0) // Up
       printf("\033[%dA", pos);
@@ -16,7 +20,7 @@ int move_cur(short dir, short pos) // Takes a direction (represented by a number
    else if (dir == 3) // Down
       printf("\033[%dB", pos);
 
-   else // If dir is not a valid number
+   else // If dir is not a valid value
       return 1;
 
    return 0;

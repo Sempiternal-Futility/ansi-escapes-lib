@@ -1,11 +1,13 @@
 This file contains a brief explanation of the functions supplied by the header file.
 Each "block/square" in this .txt file is a function.
 
+This library already includes "stdio.h", since it makes the use of the "printf" function.
+
  ______________________________________________________________________________________________________
 | move_cur                                                                                             |
 | This function can move the cursor on the terminal screen (note that this is not your mouse cursor).  |
 |                                                                                                      |
-| It takes 2 arguments (both are numbers):                                                             |
+| It takes 2 arguments:                                                                                |
 | 1- The 1st arg is the direction (i.e up, left, right, down).                                         |
 |                                                                                                      |
 | 0 = up                                                                                               |
@@ -15,7 +17,7 @@ Each "block/square" in this .txt file is a function.
 |                                                                                                      |
 | 2- The 2nd arg is how many chars you want to move in that direction                                  |
 |                                                                                                      |
-| EX: move_cur(0, 5); // Moves the cursor 5 positions up                                               |
+| EX: move_cur(up, 5); // Moves the cursor 5 positions up                                              |
 |                                                                                                      |
 | It returns 0 if everything goes ok. If you pass a non-valid value, it will return 1.                 |
  \____________________________________________________________________________________________________/
